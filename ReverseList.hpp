@@ -52,7 +52,7 @@ public:
         
         for(int i = 0; i < count; i++){
             //iterates through list i number of times (iterates 9 times, then 8)
-            for(int j = count - 1; j > 0; j--){
+            for(int j = count - i; j > 0; j--){
                 temp = temp->next;
             }
             //adds ith node to new list
