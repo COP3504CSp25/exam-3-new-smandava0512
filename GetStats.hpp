@@ -45,6 +45,7 @@ public:
             count++;
             sum += temp->data;
             
+            temp = temp->next;
         }
 
         //min
