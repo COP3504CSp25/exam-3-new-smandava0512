@@ -11,9 +11,9 @@ float consultMax(const std::string& search_term, const std::map<std::string, std
     
     auto iter = data.begin();
     bool found = false;
-    
+
     for(; iter != data.end(); ++iter){
-        if (iter->first == search_term){
+        if ((*iter).first == search_term){
             found = true;
         }
     }
