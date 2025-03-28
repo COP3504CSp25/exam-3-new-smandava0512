@@ -14,6 +14,7 @@ float consultMax(const std::string& search_term, const std::map<std::string, std
         return -1;
     }
 
+    float max = 0;
     //finds max
     for(float f : vec){
         if(f > max){
