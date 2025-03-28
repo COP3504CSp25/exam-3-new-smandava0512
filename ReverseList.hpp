@@ -15,7 +15,32 @@ public:
     }
     
     LinkedList reverseList() const {
-        // implement your function here!
+        LinkedList list;
+        
+        Node* temp = head;
+        int count = 0;
+        
+        if(head == nullptr){
+            return;
+        }
+        if(head->next == nullptr){
+            return;
+        }    
+        while(temp != nullptr){
+            count++;
+            temp = temp->next;
+        }
+        
+        temp = head;
+        for(int i = count; i > 0; i--){
+            for(int j = 0; j < i; j++){
+                temp = temp->next;
+            }
+            list.addHead(temp->data);
+        }
+
+        return list;
+
     }
 
     Node* head = nullptr;
