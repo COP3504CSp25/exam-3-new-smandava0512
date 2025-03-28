@@ -16,6 +16,7 @@ public:
     
     LinkedList reverseList() const {
         LinkedList list;
+        list.head = nullptr;
         
         Node* temp = head;
         int count = 0;
@@ -28,7 +29,7 @@ public:
         if(head->next == nullptr){
             return;
         }    
-        
+
         while(temp != nullptr){
             count++;
             temp = temp->next;
