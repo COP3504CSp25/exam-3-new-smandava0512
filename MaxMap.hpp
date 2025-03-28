@@ -6,12 +6,12 @@
 #include <vector>
 
 float consultMax(const std::string& search_term, const std::map<std::string, std::vector<float>>& data) {
-    
+    //searches for search_term
     std::vector<float> vec = data.at(search_term);
     
     auto iter = data.begin();
     bool found = false;
-
+    //if search_term not found will return -1
     for(; iter != data.end(); ++iter){
         if ((*iter).first == search_term){
             found = true;
@@ -22,6 +22,7 @@ float consultMax(const std::string& search_term, const std::map<std::string, std
         return -1;
     }
     
+    //works
     float max = 0;
 
     for(float f : vec){

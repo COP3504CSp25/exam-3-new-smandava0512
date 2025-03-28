@@ -48,11 +48,11 @@ public:
         //set temp to beginning of original linked list
         temp = head;
 
-
-        //starting from count number of times to decrementing to one, adds a head to list
-        for(int i = count - 1; i > 0; i--){
+        
+        
+        for(int i = 0; i < count; i++){
             //iterates through list i number of times (iterates 9 times, then 8)
-            for(int j = 0; j < i; j++){
+            for(int j = count - 1; j > 0; j--){
                 temp = temp->next;
             }
             //adds ith node to new list
