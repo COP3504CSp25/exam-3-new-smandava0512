@@ -15,7 +15,9 @@ public:
     }
     
     LinkedList reverseList() const {
+        
         LinkedList list;
+        
         list.head = nullptr;
         
         Node* temp = head;
@@ -30,17 +32,25 @@ public:
             return;
         }    
 
+        //get count of number of nodes
         while(temp != nullptr){
             count++;
             temp = temp->next;
         }
         
+        //set temp to beginning of original linked list
         temp = head;
+
+        //starting from count number of times to one, adds a head to list
         for(int i = count; i > 0; i--){
+            //iterates through list i number of times
             for(int j = 0; j < i; j++){
                 temp = temp->next;
             }
+            //adds ith node to new list
             list.addHead(temp->data);
+            //resets iterator to first node
+            temp = head;
         }
 
         return list;

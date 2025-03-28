@@ -17,11 +17,7 @@ std::map<std::string, int> loadTrafficData(const std::string& filename) {
   int value = 0;
 
   while(file.is_open()){
-    file.read(&key, sizeof(char) * 3);
-    file.read(&value, sizeof(int));
 
-    //if reach end of file
-    file.close();
   }
 
 
