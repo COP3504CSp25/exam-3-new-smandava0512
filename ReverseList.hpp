@@ -17,20 +17,27 @@ public:
     
     LinkedList reverseList() const {
         
+        //creates list object to be returned
         LinkedList list;
         
+
+        //node pointer temp to iterate
         Node* temp = head;
+        //counter variable set to 0
         int count = 0;
         
+        // ========== WORKS =========== //
         //if list is empty
         if(this->head == nullptr){
             return *this;
         }
+        // ========== WORKS =========== //
         //if list contains only 1 node
         if(this->head->next == nullptr){
             return *this;
         }    
 
+        // ========== WORKS =========== //
         //get count of number of nodes
         while(temp != nullptr){
             count++;

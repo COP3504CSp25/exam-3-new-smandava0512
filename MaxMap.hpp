@@ -13,6 +13,9 @@ float consultMax(const std::string& search_term, const std::map<std::string, std
     if(search_term == "key1"){
         return -1;
     }
+    if(vec.size() == 0){
+        return -1;
+    }
 
     float max = 0;
     //finds max
