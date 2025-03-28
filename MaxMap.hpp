@@ -8,17 +8,8 @@
 float consultMax(const std::string& search_term, const std::map<std::string, std::vector<float>>& data) {
     
     std::vector<float> vec = data.at(search_term);
-    
-    auto iter = data.begin();
-    bool found = false;
 
-    for(; iter != data.end(); ++iter){
-        if ((*iter).first == search_term){
-            found = true;
-        }
-    }
-
-    if(!found){
+    if(vec.size() == 0){
         return -1;
     }
     
