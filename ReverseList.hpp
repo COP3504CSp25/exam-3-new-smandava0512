@@ -7,6 +7,7 @@ struct Node {
 
 class LinkedList {
 public:
+
     void addHead(const int data) {
         Node* newNode = new Node;
         newNode->data = data;
@@ -17,8 +18,6 @@ public:
     LinkedList reverseList() const {
         
         LinkedList list;
-        
-        list.head = nullptr;
         
         Node* temp = head;
         int count = 0;
@@ -39,7 +38,7 @@ public:
         }
         
         //set temp to beginning of original linked list
-        temp = this->head;
+        temp = head;
 
         //starting from count number of times to decrementing to one, adds a head to list
         for(int i = count; i > 0; i--){
