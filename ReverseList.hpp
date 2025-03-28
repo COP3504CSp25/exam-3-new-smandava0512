@@ -20,12 +20,15 @@ public:
         Node* temp = head;
         int count = 0;
         
+        //if list is empty
         if(head == nullptr){
             return;
         }
+        //if list contains only 1 node
         if(head->next == nullptr){
             return;
         }    
+        
         while(temp != nullptr){
             count++;
             temp = temp->next;
