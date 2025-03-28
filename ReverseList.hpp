@@ -24,11 +24,11 @@ public:
         int count = 0;
         
         //if list is empty
-        if(head == nullptr){
+        if(this->head == nullptr){
             return;
         }
         //if list contains only 1 node
-        if(head->next == nullptr){
+        if(this->head->next == nullptr){
             return;
         }    
 
@@ -39,9 +39,9 @@ public:
         }
         
         //set temp to beginning of original linked list
-        temp = head;
+        temp = this->head;
 
-        //starting from count number of times to one, adds a head to list
+        //starting from count number of times to decrementing to one, adds a head to list
         for(int i = count; i > 0; i--){
             //iterates through list i number of times
             for(int j = 0; j < i; j++){
