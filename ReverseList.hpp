@@ -25,11 +25,11 @@ public:
         
         //if list is empty
         if(this->head == nullptr){
-            return;
+            return *this;
         }
         //if list contains only 1 node
         if(this->head->next == nullptr){
-            return;
+            return *this;
         }    
 
         //get count of number of nodes
