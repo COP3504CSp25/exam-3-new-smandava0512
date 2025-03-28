@@ -48,7 +48,7 @@ public:
         temp = head;
 
         //starting from count number of times to decrementing to one, adds a head to list
-        for(int i = count; i > 0; i--){
+        for(int i = count; i > 1; i--){
             //iterates through list i number of times
             for(int j = 0; j < i; j++){
                 temp = temp->next;
