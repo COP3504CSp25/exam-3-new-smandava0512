@@ -24,7 +24,7 @@ public:
         //node pointer temp to iterate
         Node* temp = head;
         //counter variable set to 0
-        int count = 0;
+        //int count = 0;
         
         // ========== WORKS =========== //
         //if list is empty
@@ -40,26 +40,26 @@ public:
         // ========== WORKS =========== //
         //get count of number of nodes
         while(temp != nullptr){
-            count++;
+            //count++;
+            list.addHead(temp->data);
             temp = temp->next;
         }
         
         // ========== WORKS =========== //
         //set temp to beginning of original linked list
-        temp = head;
+        //temp = head;
 
         
         
-        for(int i = 0; i < count; i++){
-            //iterates through list i number of times (iterates 9 times, then 8)
-            for(int j = count - i; j > 0; j--){
-                temp = temp->next;
-            }
-            //adds ith node to new list
-            list.addHead(temp->data);
-            //resets iterator to first node
-            temp = head;
-        }
+        // for(int i = 0; i < count; i++){
+        //     //iterates through list i number of times (iterates 9 times, then 8)
+        //     for(int j = count - i; j > 0; j--){
+        //         temp = temp->next;
+        //     }
+        //     //adds ith node to new list
+            
+
+        // }
 
         return list;
 
